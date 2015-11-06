@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController">
+            <connections>
+                <outlet property="chatTextField" destination="f5j-4S-o0X" id="zUk-Ir-5Gq"/>
+                <outlet property="tableView" destination="aRU-1S-8Xh" id="97m-Db-5b4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f5j-4S-o0X">
+                    <rect key="frame" x="8" y="530" width="260" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="JtN-SJ-ehf"/>
+                        <constraint firstAttribute="width" constant="260" id="Xrf-Mb-MB1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aRU-1S-8Xh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="522"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKt-F0-1nQ">
+                    <rect key="frame" x="276" y="530" width="36" height="30"/>
+                    <animations/>
+                    <state key="normal" title="Send"/>
+                    <connections>
+                        <action selector="onSend:" destination="-1" eventType="touchUpInside" id="ww1-aO-mOd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="f5j-4S-o0X" secondAttribute="bottom" constant="8" id="1kr-8R-Eu1"/>
+                <constraint firstItem="aRU-1S-8Xh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5HA-kB-Jju"/>
+                <constraint firstAttribute="trailing" secondItem="BKt-F0-1nQ" secondAttribute="trailing" constant="8" id="7RF-mC-AaN"/>
+                <constraint firstItem="BKt-F0-1nQ" firstAttribute="centerY" secondItem="f5j-4S-o0X" secondAttribute="centerY" id="CGZ-qt-Y33"/>
+                <constraint firstItem="aRU-1S-8Xh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GKX-rm-GYx"/>
+                <constraint firstAttribute="trailing" secondItem="aRU-1S-8Xh" secondAttribute="trailing" id="OcM-dW-yIg"/>
+                <constraint firstItem="f5j-4S-o0X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Wob-MG-nUh"/>
+                <constraint firstItem="BKt-F0-1nQ" firstAttribute="top" secondItem="aRU-1S-8Xh" secondAttribute="bottom" constant="8" id="gHW-rW-JfC"/>
+                <constraint firstItem="BKt-F0-1nQ" firstAttribute="leading" secondItem="f5j-4S-o0X" secondAttribute="trailing" constant="8" id="pO4-TG-L0N"/>
+            </constraints>
+            <point key="canvasLocation" x="393" y="293"/>
+        </view>
+    </objects>
+</document>
